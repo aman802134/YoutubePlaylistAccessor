@@ -1,0 +1,168 @@
+*
+{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body
+{
+    overflow-x: hidden;
+}
+.wrapper
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.sec-wrapper
+{
+    width: 100%;
+    height: 100%;
+    padding-inline: 10px;
+}
+.navbar
+{
+    width: 100%;
+    padding-block: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-input
+{
+    flex: 1;
+    /* width: 50%; */
+    height: 100%;
+    padding-inline: 10px;
+    padding-block: 15px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.search-btn
+{
+    padding-inline: 30px;
+    padding-block: 15px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+    background-color: lightgreen;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* search result container/list style */
+.search-res-container
+{
+    border: 1px solid black;
+    width: 50vw;
+    height: 40vh;
+    max-height: 45vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    background-color: white;
+}
+.search-res-list
+{
+    width: 100%;
+    height: 100%;
+}
+
+.hide{
+    display: none;
+}
+.search-res-list>.search-res-list_items
+{
+    width: 100%;
+    padding-inline: 10px;
+    padding-block: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3) ;
+    cursor: pointer;
+}
+
+/* main content style */
+.content-container
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:  2fr 1fr ;
+}
+/* video */
+.video-alignment-container
+{
+    height: 100%;
+    padding-inline: 40px;
+    padding-block: 30px;
+    /* border: 1px solid red; */
+}
+.video-container
+{
+    /* border: 1px solid black; */
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 10px rgba(0,0,0,0.5);
+}
+.video
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* playlist */
+.playlist-alingment-container
+{
+    height: 100%;
+}
+.playlist-container
+{
+    padding-inline: 5px;
+    padding-block: 5px;
+    height: 100%;
+    max-height: 83vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+}
+.playlist-container>#playlist
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.playlist-container>#playlist>.playlist-item
+{
+    width: 100%;
+    /* height: 100%; */
+    padding-inline: 10px;
+    padding-block: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3) ;
+    /* margin-top: 2px; */
+    /* border: 1px solid red; */
+}
